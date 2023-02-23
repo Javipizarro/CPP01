@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 21:40:00 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/02/23 19:52:50 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/02/23 21:13:50 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int		main(void){
 	cout
 		<< endl
 		<< "Welcome to ZombieLand" << endl;
-	input = "hola";
 	while (input != "EXIT" && input != "BYE"){
 	cout
 		<< endl
