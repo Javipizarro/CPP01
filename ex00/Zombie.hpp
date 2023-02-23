@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 21:44:18 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/02/23 00:14:59 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/02/23 19:29:58 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@
 
 using namespace std;
 
-Zombie	*newZombie( string name );
-void	randomChump( string name );
 
 class Zombie {
 
@@ -33,5 +31,8 @@ private:
 
 	string _name;
 };
+
+Zombie	*newZombie( string name );
+void	randomChump( string name );
 
 #endif

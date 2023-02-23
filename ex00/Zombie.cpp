@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 21:51:33 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/02/22 22:08:37 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/02/23 19:35:26 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Zombie::Zombie (string name) : _name(name) {
 }
 
 Zombie::~Zombie (void) {
-	cout << "Zombie " << this->_name << "destroyed" << endl;
+	cout << "Zombie " << this->_name << " destroyed" << endl;
 	return;
 }
 

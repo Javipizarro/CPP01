@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 21:40:00 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/02/23 00:35:38 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/02/23 19:52:50 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,14 @@ int		main(void){
 	Zombie	*zombie;
 	int		brains;
 
-	cout << "Welcome to ZombieLand" << endl;
-	cout << "Do yoy want to create a Zombie or a Chump?" << endl;
-	do {
+	cout
+		<< endl
+		<< "Welcome to ZombieLand" << endl;
+	input = "hola";
+	while (input != "EXIT" && input != "BYE"){
+	cout
+		<< endl
+		<< "Do yoy want to create a Zombie or a Chump?" << endl;
 		cin >> input;
 		for (int i = 0; input[i]; i++)
 			input[i] = toupper(input[i]);
@@ -28,8 +33,9 @@ int		main(void){
 			cout << "Wnat is this Zombie's name?" << endl;
 			cin >> name;
 			zombie = newZombie(name);
-			cout << "OK, it looks scary..." << endl;
-			cout << "From 0 to 10, how many brains do you want it to eat?" << endl;
+			cout
+				<< "OK, it looks scary..." << endl
+				<< "From 0 to 10, how many brains do you want it to eat?" << endl;
 			cin >> brains;
 			if (!std::cin.good()) {
 				std::cin.clear();
@@ -43,15 +49,19 @@ int		main(void){
 				zombie->announce();
 			delete zombie;
 		} else if (input == "C" || input == "CHUMP") {
-			cout << "What is your Chump's name?" << endl;
+			cout
+				<< "What is your Chump's name?" << endl;
 			cin >> name;
 			randomChump(name);
-			cout << "MMmmm, this one didn't eat that much..." << endl;
-		} else if (input != "EXIT" || input != "BYE") {
-			cout << "I'm not sure what kind of creature is that one." << endl;
-			cout << "Let's try it again:" << endl;
+			cout
+				<< "MMmmm, this one cannot eat too much..." << endl;
+		} else if (input != "EXIT" && input != "BYE") {
+			cout
+				<< "I'm not sure what kind of creature is that one." << endl
+				<< "Let's try it again:" << endl;
 		}
-	} while (input != "EXIT" || "BYE");
-	cout << "See ya!" << endl;
+	}
+	cout
+		<< "See ya!" << endl;
 	return (0);
 }
