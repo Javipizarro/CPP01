@@ -4,6 +4,7 @@ NAME	=	replace
 
 SRCS	=	main.cpp
 
+
 OBJS	= $(SRCS:.cpp=.o)
 
 CXX	:= c++
