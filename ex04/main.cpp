@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 15:02:30 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/03/05 20:59:07 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/03/05 21:02:16 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,14 +45,14 @@ bool	openFiles(ifstream& iFile, ofstream& oFile, string filePath) {
 
 void	replace(ifstream& iFile, ofstream& oFile, const string s1, const string s2) {
 	string	line, buff;
-	int		eraseLen = s1.length(), insertLen = s2.length(), lastPos = 0;
+	size_t	eraseLen = s1.length(), insertLen = s2.length(), lastPos = 0;
 	
 	for (int i = 0; getline(iFile, line); i++) {
 		if (i)
 			buff.append("\n");
 		buff.append(line);
 	}
-	while ((lastPos = buff.find(s1, lastPos)) != -1) {
+	while ((lastPos = buff.find(s1, lastPos)) != string::npos) {
 		buff.erase(lastPos, eraseLen);
 		buff.insert(lastPos, s2);
 		lastPos += insertLen;
