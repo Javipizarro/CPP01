@@ -6,12 +6,15 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 21:12:44 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/03/05 21:20:35 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/03/06 15:29:46 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <fstream>
+#ifndef HARL_HPP
+# define HARL_HPP
+
+# include <iostream>
+# include <fstream>
 
 using namespace std;
 
@@ -19,8 +22,8 @@ class	Harl {
 
 public:
 
-	Harl::Harl( void );
-	Harl::~Harl( void );
+	Harl( void );
+	~Harl( void );
 
 	void	complain( string level );
 
@@ -32,3 +35,7 @@ private:
 	void	error( void );
 
 };
+
+typedef	void (Harl::*complain_p)(void) const;
+
+#endif

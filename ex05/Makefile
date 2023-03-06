@@ -1,6 +1,6 @@
 .PHONY: all clean fclean re
 
-NAME	=	Harl
+NAME	=	harl
 
 SRCS	=	main.cpp														\
 			Harl.cpp
