@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 21:44:18 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/02/23 19:29:58 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/03/08 09:42:19 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ class Zombie {
 
 public:
 
-	Zombie(string name);
+	Zombie(string const name);
 	~Zombie(void);
 
-	void	announce( void );
+	void	announce( void ) const;
 
 private:
 
