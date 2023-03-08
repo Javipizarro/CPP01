@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 21:12:44 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/03/06 16:38:17 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/03/08 07:35:54 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,14 @@ public:
 	Harl( void );
 	~Harl( void );
 
-	void	complain( string level );
+	void	complain( string const level ) const;
 
 private:
 
-	void	debug( void );
-	void	info( void );
-	void	warning( void );
-	void	error( void );
+	void	debug( void ) const;
+	void	info( void ) const;
+	void	warning( void ) const;
+	void	error( void ) const;
 
 };
 

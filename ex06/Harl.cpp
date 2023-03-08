@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 21:14:25 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/03/06 16:48:55 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/03/08 07:35:51 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Harl::~Harl( void ) {
 	return;
 }
 
-void	Harl::complain( string level ) {
+void	Harl::complain( string const level ) const {
 	size_t i;
 
 	string	levels[NBR_LVLS] = {
@@ -44,8 +44,7 @@ void	Harl::complain( string level ) {
 	}
 }
 
-void Harl::debug ( void )
-{
+void	Harl::debug ( void ) const {
 	cout
 		<< "[ DEBUG ]" << endl
 		<< "I love to get extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger." << endl
@@ -53,8 +52,7 @@ void Harl::debug ( void )
 		<< endl;
 }
 
-void Harl::info ( void )
-{
+void	Harl::info ( void ) const {
 	cout
 		<< "[ INFO ]" << endl
 		<< "I cannot believe adding extra bacon cost more money." << endl
@@ -62,8 +60,7 @@ void Harl::info ( void )
 		<< endl;
 }
 
-void Harl::warning ( void )
-{
+void	Harl::warning ( void ) const {
 	cout
 		<< "[ WARNING ]" << endl
 		<< "I think I deserve to have some extra bacon for free." << endl
@@ -71,8 +68,7 @@ void Harl::warning ( void )
 		<< endl;
 }
 
-void Harl::error ( void )
-{
+void	Harl::error ( void ) const {
 	cout
 		<< "[ ERROR ]" << endl
 		<< "This is unacceptable, I want to speak to the manager now." << endl
