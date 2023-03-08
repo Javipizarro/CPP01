@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 21:14:25 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/03/08 07:35:51 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/03/08 08:02:13 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,21 @@ void	Harl::complain( string const level ) const {
 		case 0: Harl::debug();
 		case 1: Harl::info();
 		case 2: Harl::warning();
-		case 3: Harl::error(); break;
-		default: cout << "[ Probably complaining about insignificant problems. ]" << endl; break;
+		case 3: Harl::error();
+			break;
+		default:
+			cout
+				<< endl
+				<< "[ Probably complaining about insignificant problems. ]" << endl
+				<< endl;
+			break;
+
 	}
 }
 
 void	Harl::debug ( void ) const {
 	cout
+		<< endl
 		<< "[ DEBUG ]" << endl
 		<< "I love to get extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger." << endl
 		<< "I just love it!" << endl
@@ -54,6 +62,7 @@ void	Harl::debug ( void ) const {
 
 void	Harl::info ( void ) const {
 	cout
+		<< endl
 		<< "[ INFO ]" << endl
 		<< "I cannot believe adding extra bacon cost more money." << endl
 		<< "You don’t put enough! If you did I would not have to ask for it!"<< endl
@@ -62,6 +71,7 @@ void	Harl::info ( void ) const {
 
 void	Harl::warning ( void ) const {
 	cout
+		<< endl
 		<< "[ WARNING ]" << endl
 		<< "I think I deserve to have some extra bacon for free." << endl
 		<< "I’ve been coming here for years and you just started working here last month." << endl
@@ -70,6 +80,7 @@ void	Harl::warning ( void ) const {
 
 void	Harl::error ( void ) const {
 	cout
+		<< endl
 		<< "[ ERROR ]" << endl
 		<< "This is unacceptable, I want to speak to the manager now." << endl
 		<< endl;
