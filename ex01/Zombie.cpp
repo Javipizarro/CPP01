@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 21:51:33 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/02/23 20:36:34 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/03/08 09:43:00 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ Zombie::~Zombie (void) {
 	return;
 }
 
-void	Zombie::announce (void) {
+void	Zombie::announce (void) const {
 	cout << this->_name << ": BraiiiiiiinnnzzzZ..." << endl;
 	return;
 }
 
-void	Zombie::setName ( string name ) {
+void	Zombie::setName ( string const name ) {
 	this->_name = name;
 	return;
 }
