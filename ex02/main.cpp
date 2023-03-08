@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/25 23:20:51 by jpizarro          #+#    #+#             */
-/*   Updated: 2023/02/25 23:47:08 by jpizarro         ###   ########.fr       */
+/*   Updated: 2023/03/08 08:16:05 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #define LOG(x, y) std::cout << x << y << std::endl;
 
 int		main( void ) {
-	std::string	string = "HI THIS IS BRAIN";
+	std::string		string = "HI THIS IS BRAIN";
 	std::string*	stringPTR = &string;
 	std::string&	stringREF = string;
 
